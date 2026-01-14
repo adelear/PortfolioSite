@@ -72,8 +72,8 @@ html, body, h1, h2, h3, h4, h5, h6 {
   top: 50%;          
   left: 6%;        
   transform: translateY(-50%); 
-  height: 250px;       
-  max-width: 400px;  
+  height: 60%;       
+  max-width: 50%;  
 }
 
 
