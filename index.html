@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,21 +17,17 @@
 
 <!-- Logo Banner -->
 <div class="banner-container">
-  <!-- Background banner image -->
   <img src="images/Banner.png" alt="Banner" class="banner-bg">
 </div>
 
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-large">
-
     <a href="index.html" class="w3-bar-item w3-button">Home</a>
 
     <!-- Engineering Dropdown -->
     <div class="w3-dropdown-hover">
-      <button class="w3-button">
-        Engineering ▾
-      </button>
+      <button class="w3-button">Engineering ▾</button>
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
         <a href="engineering/optiroute.html" class="w3-bar-item w3-button">OptiRoute</a>
       </div>
@@ -38,19 +35,11 @@
 
     <!-- Games Dropdown -->
     <div class="w3-dropdown-hover">
-      <button class="w3-button w3-theme-l1">
-        Games ▾
-      </button>
+      <button class="w3-button w3-theme-l1">Games ▾</button>
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="games/labinacs-cuisine.html" class="w3-bar-item w3-button">
-          Labinac’s Cuisine
-        </a>
-        <a href="games/end-of-eros.html" class="w3-bar-item w3-button">
-          End of Eros
-        </a>
-        <a href="games/sprout.html" class="w3-bar-item w3-button">
-          SPROUT
-        </a>
+        <a href="games/labinacs-cuisine.html" class="w3-bar-item w3-button">Labinac’s Cuisine</a>
+        <a href="games/end-of-eros.html" class="w3-bar-item w3-button">End of Eros</a>
+        <a href="games/sprout.html" class="w3-bar-item w3-button">SPROUT</a>
         <a href="games/freddys-revival.html" class="w3-bar-item w3-button">Freddy's Revival</a>
       </div>
     </div>
@@ -59,29 +48,54 @@
   </div>
 </div>
 
-<div class="w3-main" style="color:black;">
+<!-- Main content -->
+<div class="w3-main page-bg">
   <div class="w3-container page-center">
-    <h1 class="w3-text-black">Hi, I’m Adelear</h1>
-    <p>
-      Game Design and Developer Graduate of Toronto Film School and Third Year Computer Engineering student at University of Toronto,
-      focused on AI-driven systems,
-      gameplay programming, and technical problem-solving.
-    </p>
-    <p>
-      Use the navigation above to explore my engineering projects and games.
-    </p>
 
-    <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/NNoaLUtJIoI?si=2iB6sz-4Ih7tJIjK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Intro Section -->
+    <div class="intro-section">
+      <h1 class="w3-text-black">Hi, I’m Adelear</h1>
+      <p>
+        Game Design and Developer Graduate of Toronto Film School and Third Year Computer Engineering student at University of Toronto,
+        focused on AI-driven systems, gameplay programming, and technical problem-solving.
+      </p>
+      <p>Use the navigation above to explore my engineering projects and games.</p>
     </div>
-  </div>
 
-  <!-- Gameplay Video -->
-      
-  
-        
+    <!-- Featured Video -->
+    <div class="video-container">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/NNoaLUtJIoI?autoplay=1&mute=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Interests Section -->
+    <h2>Interests</h2>
+    <ul class="interests-list">
+      <li>Game Design</li>
+      <li>Programming</li>
+      <li>AI & Machine Learning</li>
+      <li>Digital Art</li>
+      <li>Physics-based Gameplay</li>
+      <li>Rock Climbing</li>
+    </ul>
+
+    <!-- Last Updated -->
+    <div class="last-updated">
+      Last Updated: <span id="lastUpdated"></span>
+    </div>
+
+  </div>
 </div>
 
+<script>
+  // Automatically updating the "Last Updated" date
+  document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();
+</script>
 
 </body>
 </html>

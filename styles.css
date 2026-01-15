@@ -139,3 +139,66 @@ html, body, h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* Making fixess to home page */
+
+/* Page background white */
+body {
+  background-color: #fff;
+  color: #000; /* default text color */
+}
+
+/* Last Updated section */
+.last-updated {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+/* Interests Section */
+.interests {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.interests h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #222;
+}
+
+.interests ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.interests-list li {
+  background-color: #000; 
+  color: #fff; 
+  padding: 6px 14px; 
+  border-radius: 999px; 
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: default;
+}
+
+.interests-list li:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
