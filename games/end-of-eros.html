@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Adelear | Games</title>
+  <title>Adelear | Games | End of Eros </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,9 +15,8 @@
 
 <body>
 
-<!-- Logo Banner -->
+
 <div class="banner-container">
-  <!-- Background banner image -->
   <img src="../images/Banner.png" alt="Banner" class="banner-bg">
 </div>
 
@@ -63,13 +62,135 @@
 
 
 <!-- Main content -->
-<div class="w3-main">
-  <div class="w3-container page-center">
 
-    <div class="w3-padding-32 w3-white w3-round-large w3-margin-bottom">
-      <h2>End of Eros</h2>
-      <p> Work in progress...</p>
-   </div>
+    <div class="w3-main">
+    <div class="w3-container page-center">
+      <div class="w3-padding-32 w3-white w3-round-large w3-margin-bottom">
+        <h2>End of Eros</h2>
+
+        <p class="w3-text-grey">
+          Action · Networking · Unity Photon · C#
+        </p>
+
+        <!-- Gameplay Video -->
+        <div class="video-container">
+          <iframe width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/oPCaZTIZ1jI?si=uBMVKMw-_v0OragL" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen></iframe>
+        </div>
+
+        <!-- KEY SPECIFICATIONS -->
+        <p><b>Role:</b> General Programmer, Intro Cinematic Artist | <b>Year:</b> 2023 - 2024</p>
+        <p>
+          <b>Platform:</b> PC Executable |
+          <b>Genre:</b> Multiplayer Action |
+          <b>Art Style:</b> Stylized 3D |
+          <b>Target Audience:</b> Everyone
+        </p>
+
+        <p>
+          <b>Overview:</b>
+          End of Eros is  Top-Down Combat Multiplayer game, where I collaborated with over 20 students as a programmer a 3D top-down online battle arena made with Unity. 
+          I worked as a programmer focused on multiplayer systems, gameplay flow, and player onboarding. I developed the round manager to sync team scores and manage game states, enhancing multiplayer gameplay
+          Created tutorial room for improved player onboarding and crafted game’s intro cinematic to establish the narrative
+          Successfully showcased End of Eros at the 2024 Toronto FanExpo and CNE, highlighting teamwork and technical accomplishments to large audiences 
+
+        </p>
+
+        <p>
+          <b>Gameplay:</b>
+          Brawl against your friends and foes in this top-down combat arena fighting game. 
+          Choose your champion - possessing unique abilities, and discover your ideal play style. 
+          But you better hurry, a desert storm is brewing, limiting areas you can run or hide. 
+          Will you conquer the arena?
+        </p>
+
+        <!-- MY ROLE -->
+        <h3 class="w3-text-black w3-border-bottom w3-padding-bottom">
+          <b>My Contributions</b>
+        </h3>
+        <!-- Multiplayer and Game State Systems -->
+        <ul class="w3-ul w3-margin-top">
+          <li><b>Multiplayer and Game State Systems</b><br>
+            I implemented a round manager system responsible for synchronizing gameplay flow across all connected clients. 
+            This system ensured consistent team score tracking, correct transitions between gameplay states, and reliable
+            synchronization across networked players using Unity's Photon Fusion. This improved stability and reduced edge-case 
+            desynchronization during multiplayer sessions. 
+          </li>
+          
+          <li><b>Player Onboarding and Tutorial Design</b><br>
+            To improve first-time player experience, I designed and implemented a dedicated tutorial scene that introduced players
+            to the core movement and combat mechanics, player abilities and energy usage, as well as match flow and objectives. 
+            This allowed players to learn the mechanics in a controlled environment before entering matches, improving accessibility and player retention.
+          </li>
+
+          <li><b>Intro Cinematic</b><br>
+            Wrote, drew, and edited the intro cinematic for End of Eros, establishing the game's narrative context. This cinematic was presented upon game startup, 
+            and used during public showcases and events to communicate the game's identity to new players. 
+
+            The project was successfully showcased at Toronto FanExpo and the CNE (2024), where I helped present the game, explain systems to players, and gather live feedback from large public audiences.
+          </li>
+
+        </ul>
+
+
+        <p>
+          <b>Tools & Workflow:</b>
+          Unity, Photon Engine, 3DS Max, Substance Painter,
+          Photoshop, Procreate, Clip Studio Paint, Trello, Discord
+        </p>
+
+        <!-- Highlights -->
+        <h3 class="w3-text-black w3-border-bottom w3-padding-bottom">
+          <b>Highlights</b>
+        </h3>
+  
+
+        <ul class="w3-ul w3-margin-top">
+          <li><b>Multiplayer Arena Combat</b><br>
+            Modular component-based architecture designed for team collaboration.
+            Scriptable Objects are used to define abilities, stats, and prefabs, as well as 
+            clean separation of input, combat, movement, and state logic enables rapid iteration and balancing.
+          </li>
+          
+          <li><b>Multiplayer Arena Combat</b><br>
+            Real-time online multiplayer built around short, high-intensity matches, with team-based rounds accompanied with synchronized scoring and win conditions. 
+          </li>
+
+          <li><b>Modular Combat System</b><br>
+          Combat built from interchangeable systems: movement, offense, defense, and energy.
+          Supports melee and ranged playstyles with distinct risk–reward tradeoffs.
+          Additionally, there are status effects, knockback, invincibility frames, and cooldown management are core to moment-to-moment decision-making
+          </li>
+
+        </ul>
+
+        <!-- IMAGES -->
+        <div class="slideshow-container w3-display-container" id="EndofErosGallery">
+          <img class="slide w3-animate-opacity" src="images/EndofEros1.PNG">
+          <img class="slide w3-animate-opacity" src="images/EndofEros2.jpg">
+          <img class="slide w3-animate-opacity" src="images/EndofEros3.jpg">
+
+          <button class="w3-button w3-display-left w3-black"
+            onclick="plusSlides(-1, 'EndofErosGallery')">&#10094;</button>
+
+          <button class="w3-button w3-display-right w3-black"
+            onclick="plusSlides(1, 'EndofErosGallery')">&#10095;</button>
+        </div>
+
+        <!-- GAME BUTTON -->
+        <div class="w3-margin-top itch-container">
+          <iframe src="https://itch.io/embed/2756850" width="552" height="167" frameborder="0"><a href="https://teammineralmayhem.itch.io/end-of-eros">End Of Eros by TeamMineralMayhem</a></iframe>
+        </div>
+
+      </div>
+    </div>
+
 
 </body>
 </html>
