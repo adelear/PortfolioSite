@@ -9,55 +9,25 @@
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="styles.css">
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  <script> 
+  $(function(){
+    $("#header").load("header.html"); 
+    // $("#footer").load("footer.html"); 
+  });
+  </script> 
 </head>
 
 <body>
 
-<!-- Logo Banner -->
-<div class="banner-container">
-  <!-- Background banner image -->
-  <img src="images/Banner.png" alt="Banner" class="banner-bg">
-</div>
+  <!-- Navbar -->
+<div id="header"></div>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-large">
-
-    <a href="index.html" class="w3-bar-item w3-button">Home</a>
-
-    <!-- Engineering Dropdown -->
-    <div class="w3-dropdown-hover">
-      <button class="w3-button">
-        Engineering ▾
-      </button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="engineering/optiroute.html" class="w3-bar-item w3-button">OptiRoute</a>
-        <a href="engineering/pokemon-deck-predictor.html" class="w3-bar-item w3-button">Pokemon TCG Deck Predictor</a>
-      </div>
-    </div>
-
-    <!-- Games Dropdown -->
-    <div class="w3-dropdown-hover">
-      <button class="w3-button w3-theme-l1">
-        Games ▾
-      </button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="games/labinacs-cuisine.html" class="w3-bar-item w3-button">
-          Labinac’s Cuisine
-        </a>
-        <a href="games/end-of-eros.html" class="w3-bar-item w3-button">
-          End of Eros
-        </a>
-        <a href="games/sprout.html" class="w3-bar-item w3-button">
-          SPROUT
-        </a>
-        <a href="games/freddys-revival.html" class="w3-bar-item w3-button">Freddy's Revival</a>
-      </div>
-    </div>
-
-    <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-  </div>
-</div>
 
 <!-- Main Content -->
 <div class="w3-main w3-padding-64">

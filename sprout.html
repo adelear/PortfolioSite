@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Adelear | Games | SPROUT </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="styles.css">
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  <script> 
+  $(function(){
+    $("#header").load("header.html"); 
+    // $("#footer").load("footer.html"); 
+  });
+  </script> 
+</head>
+
+<script src="gallery.js"></script>
+
+<body>
+
+<!-- Navbar -->
+<div id="header"></div>
+
+
+<!-- Main content -->
+
+    <div class="w3-main">
+    <div class="w3-container page-center">
+        <div class="w3-padding-32 w3-white w3-round-large w3-margin-bottom">
+          <h2>SPROUT</h2>
+
+          <!-- Tags -->
+          <p class="w3-text-grey">
+            Level Design · Platformer · UI/IX · Unity Physics · C#
+          </p>
+
+          <!-- Gameplay Video -->
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/I-VSbnFVcj8"
+              title="SPROUT Gameplay"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <!-- KEY SPECIFICATIONS -->
+          <p><b>Role:</b> Programmer, UI/UX | <b>Year:</b> 2024</p>
+          <p>
+            <b>Platform:</b> WebGL |
+            <b>Genre:</b> 2D Platformer |
+            <b>Art Style:</b> Pixelated & Toony |
+            <b>Target Audience:</b> Everyone
+          </p>
+
+          <p>
+            <b>Overview:</b>
+            <i>SPROUT</i> is a 2D platformer developed in 72 hours for the Toronto Film School Spring Game Jam,
+            themed around <b>Duality</b>. Players take on the role of Sprout, a character with the unique ability
+            to switch between giant and tiny forms. This core mechanic drives both platforming challenges and
+            puzzle-solving, requiring players to strategically change size to progress.
+          </p>
+
+          <p>
+            The game was showcased at <b>FANEXPO Canada</b> at Toronto Film School’s booth,
+            where it was played on an arcade cabinet by convention attendees.
+          </p>
+
+          <p>
+            <b>Gameplay:</b>
+            Players navigate vibrant city-inspired levels using Sprout’s size-shifting ability.
+            Giant Sprout is powerful but slow, capable of moving heavy objects and breaking barriers.
+            Tiny Sprout is fast and agile, able to wall jump and squeeze through narrow spaces.
+            Mastery of both forms is required to reach the amusement park at the end of the journey.
+          </p>
+
+          <p><b>Core Features:</b></p>
+          <ul>
+            <li>Toggle-based size transformation mechanic (giant to tiny)</li>
+            <li>Platforming challenges built around dual movement styles</li>
+            <li>Environmental puzzles requiring strategic form switching</li>
+            <li>Wall jumping, physics-based obstacles, and traversal challenges</li>
+            <li>Short-form narrative delivered through environmental context</li>
+          </ul>
+
+          <p>
+            <b>Tools & Workflow:</b>
+            Unity, Visual Studio, Aseprite, Clip Studio Paint,
+            Discord, Trello
+          </p>
+
+          <!-- Highlights -->
+          <h3 class="w3-text-black w3-border-bottom w3-padding-bottom">
+            <b>Highlights</b>
+          </h3>
+
+          <ul class="w3-ul w3-margin-top">
+            <li>
+              <b>Theme-Driven Core Mechanic</b><br>
+              The size-switching system directly embodies the game jam theme of duality,
+              influencing movement, puzzle design, and player strategy.
+            </li>
+
+            <li>
+              <b>Distinct Movement Identities</b><br>
+              Giant and tiny forms each feature unique physics, speed, and traversal capabilities,
+              creating meaningful gameplay contrast.
+            </li>
+
+            <li>
+              <b>Rapid Prototyping Under Time Constraints</b><br>
+              Designed and implemented core mechanics, UI, and polish within a 72-hour game jam timeline.
+            </li>
+
+            <li>
+              <b>Pixel Art & UI Collaboration</b><br>
+              Worked closely with the artist to integrate pixel art assets,
+              UI elements, and animations into a cohesive visual style.
+            </li>
+
+            <li>
+              <b>Public Showcase Experience</b><br>
+              Playtested by hundreds of players during FANEXPO,
+              providing real-world feedback and audience engagement.
+            </li>
+          </ul>
+
+          <!-- IMAGES -->
+          <div class="slideshow-container w3-display-container" id="sproutGallery">
+            <img class="slide w3-animate-opacity" src="games/images/Sprout1.PNG">
+            <img class="slide w3-animate-opacity" src="games/images/Sprout2.PNG">
+            <img class="slide w3-animate-opacity" src="games/images/Sprout3.jpg">
+
+            <button class="w3-button w3-display-left w3-black"
+              onclick="plusSlides(-1, 'sproutGallery')">&#10094;</button>
+
+            <button class="w3-button w3-display-right w3-black"
+              onclick="plusSlides(1, 'sproutGallery')">&#10095;</button>
+          </div>
+
+          <!-- GAME BUTTON -->
+          <div class="w3-margin-top itch-container">
+            <iframe height="167" frameborder="0" src="https://itch.io/embed/2814412" width="552"><a href="https://adelear.itch.io/sprout">Sprout by Adelear, Allasskkaaaa</a></iframe>
+          </div>
+        </div>
+
+    
+
+
+</body>
+</html>

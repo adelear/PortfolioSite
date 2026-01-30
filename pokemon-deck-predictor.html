@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Adelear | Engineering | Pokémon TCG Deck Predictor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="styles.css">
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  <script> 
+  $(function(){
+    $("#header").load("header.html"); 
+    // $("#footer").load("footer.html"); 
+  });
+  </script> 
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div id="header"></div>
+
+<!-- Main Content -->
+<div class="w3-main">
+  <div class="w3-container page-center">
+    <div class="w3-padding-32 w3-white w3-round-large w3-margin-bottom">
+
+      <h2>Pokémon TCG Deck Predictor</h2>
+      <p class="w3-text-grey">
+        Deep Learning · Computer Vision · Machine Learning · Python
+      </p>
+
+      <!-- Overview -->
+      <h3 class="w3-border-bottom w3-padding-bottom">Project Overview</h3>
+      <p>
+        A machine learning system that predicts an opponent’s most likely Pokémon TCG deck
+        archetype using only an image of their starting board (Active + Bench).
+      </p>
+
+      <img src="engineering/images/img2.png" class="w3-image w3-margin-top w3-round page-center"
+           alt="Deck prediction pipeline" style = "width:75%"> 
+
+      <!-- Pipeline -->
+      <h3 class="w3-border-bottom w3-padding-bottom">System Pipeline</h3>
+      <ul>
+        <li>Input image of opponent’s starting board</li>
+        <li>CNN detects Pokémon card ID location</li>
+        <li>Image is cropped</li>
+        <li>OCR extracts the card ID</li>
+        <li>ANN predicts deck archetype probabilities</li>
+      </ul>
+
+      <!-- Data -->
+      <h3 class="w3-border-bottom w3-padding-bottom">Data Collection & Processing</h3>
+      <p>
+        Card images were collected from the Pokémon TCG API and paired with tournament
+        decklists from Limitless TCG (2011–2023).
+      </p>
+
+      <!-- Architecture -->
+      <h3 class="w3-border-bottom w3-padding-bottom">Model Architecture</h3>
+
+      <h4>Convolutional Neural Network (CNN)</h4>
+      <ul>
+        <li>LargeNet architecture</li>
+        <li>3 convolutional layers (32 / 64 / 128 filters)</li>
+        <li>ReLU activation and max pooling</li>
+        <li>Binary classification: ID location</li>
+      </ul>
+
+      <h4>Artificial Neural Network (ANN)</h4>
+      <ul>
+        <li>128-dim card embedding</li>
+        <li>256-unit hidden layer</li>
+        <li>Sigmoid multi-label output</li>
+      </ul>
+
+      <!-- Results -->
+      <h3 class="w3-border-bottom w3-padding-bottom">Training Results</h3>
+      <ul>
+        <li>Training Accuracy: <b>96.61%</b></li>
+        <li>Validation Accuracy: <b>97.6%</b></li>
+      </ul>
+
+      <img src="engineering/images/TrainingData.png" class="w3-image w3-margin-top w3-round"
+           alt="CNN training results">
+
+      <!-- Qualitative -->
+      <h3 class="w3-border-bottom w3-padding-bottom">Qualitative ANN Results</h3>
+      <p>
+        The ANN accurately predicts the most successful deck archetypes for unseen cards,
+        except when cards have no tournament presence.
+      </p>
+
+      <img src="engineering/images/ANNQualitativeResults.jpg" class="w3-image w3-margin-top w3-round"
+           alt="ANN qualitative results">
+
+      <!-- Challenges -->
+      <h3 class="w3-border-bottom w3-padding-bottom">Challenges & Limitations</h3>
+      <p>
+        OCR performance was the primary bottleneck, frequently misreading card IDs and
+        preventing a fully reliable end-to-end pipeline.
+      </p>
+
+      <!-- Ethics -->
+      <h3 class="w3-border-bottom w3-padding-bottom">Ethical Considerations</h3>
+      <p>
+        This tool is intended for learning and practice. Users should be aware that
+        predictive tools may provide competitive advantages.
+      </p>
+
+      <!-- Tools -->
+      <h3 class="w3-border-bottom w3-padding-bottom">Tools & Technologies</h3>
+      <ul class="interests-list">
+        <li>Python</li>
+        <li>PyTorch / TensorFlow</li>
+        <li>OpenCV</li>
+        <li>Pokémon TCG API</li>
+        <li>Limitless TCG Dataset</li>
+        <li>Google Colab</li>
+      </ul>
+
+      <!-- Links -->
+      <h3 class="w3-border-bottom w3-padding-bottom">Links</h3>
+      <a href="https://github.com/adelear/APS360-Pokemon-Deck-Predictor"
+         class="w3-button w3-teal w3-margin-right">GitHub</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
